@@ -4,7 +4,7 @@ class Tweet
     @tweet_amount = tweet_amount
   end
 
-  def get_tweet
+  def get_tweets
     tweets = Twitter.user_timeline(@user_id, {:amount=>@tweet_amount, :page=>1})
     tweets.map {|t| [t.created_at.strftime("%Y/%m/%d %H:%M"), t.text]}
   end
