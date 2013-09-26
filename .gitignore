@@ -18,3 +18,5 @@
 /vendor
 
 /config/initializers/twitter.rb
+
+.rspec
